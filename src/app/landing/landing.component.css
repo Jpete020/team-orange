@@ -1,0 +1,57 @@
+.container{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.header-container{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to right, orange , white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image{
+  width: 350px;
+  height: auto;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-statement{
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 10px;
+  line-height: 30px;
+  color: #202020;
+}
+
+.problem{
+  font-size: 42px;
+  font-weight: bold;
+  color: #202020;
+}
+
+.statement-container{
+  margin-top: 250px;
+  margin-right: 50px;
+}
+
+.learn-more-btn{
+  margin: 10px auto;
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+}
