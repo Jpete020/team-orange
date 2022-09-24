@@ -1,24 +1,26 @@
-<div class="container">
+<div class="toolbar" role="banner">
 
-  <div class="toolbar" role="banner">
+  <div class="home-logo">Team Orange</div>
 
-    <div class="home-logo">Team Orange</div>
+  <div class="spacer"></div>
 
-    <div class="spacer"></div>
-
-    <div class="top-nav-button-container">
-     <button class="top-nav-buttons" routerLink="" mat-button>Home</button>
-     <button class="top-nav-buttons" routerLink="team" mat-button>Team</button>
-     <button mat-button [matMenuTriggerFor]="beforeMenu" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon></button>
-     <mat-menu #beforeMenu="matMenu" xPosition="before">
-       <button mat-menu-item routerLink="">Feasibility</button>
-     </mat-menu>
-     <button class="top-nav-buttons" routerLink="" mat-button>User Stories</button>
-     <button class="top-nav-buttons" routerLink="" mat-button>Prototype</button>
-     <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
-    </div>
-
+  <div class="top-nav-button-container">
+   <button class="top-nav-buttons" routerLink="" mat-button>Home</button>
+   <button class="top-nav-buttons" routerLink="team" mat-button>Team</button>
+   <button mat-button [matMenuTriggerFor]="beforeMenu" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon></button>
+   <mat-menu #beforeMenu="matMenu" xPosition="before">
+     <button mat-menu-item routerLink="">Feasibility</button>
+   </mat-menu>
+   <button class="top-nav-buttons" routerLink="" mat-button>User Stories</button>
+   <button class="top-nav-buttons" routerLink="" mat-button>Prototype</button>
+   <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
   </div>
+
+</div>
+
+<div style="width:100%;height:100px"></div>
+
+<div class="container">
 
   <router-outlet></router-outlet>
 
