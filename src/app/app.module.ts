@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialUiModule } from './material-ui/material-ui.module';
 import { LandingComponent } from './landing/landing.component';
 import { TeamComponent } from './team/team.component';
+import { RefsComponent } from './refs/refs.component';
 
 @NgModule({
   declarations: [
