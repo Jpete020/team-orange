@@ -11,6 +11,8 @@ import { TeamComponent } from './team/team.component';
 import { RefsComponent } from './refs/refs.component';
 import { DeliverablesComponent } from './deliverables/deliverables.component';
 import { PresentationsComponent } from './presentations/presentations.component';
+import { SolutionComponent } from './solution/solution.component';
+import { GlossaryComponent } from './glossary/glossary.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PresentationsComponent } from './presentations/presentations.component'
     LandingComponent,
     TeamComponent,
     DeliverablesComponent,
-    PresentationsComponent
+    PresentationsComponent,
+    SolutionComponent,
+    GlossaryComponent
   ],
   imports: [
     BrowserModule,
