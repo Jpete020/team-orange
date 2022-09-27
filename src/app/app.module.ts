@@ -9,13 +9,17 @@ import { MaterialUiModule } from './material-ui/material-ui.module';
 import { LandingComponent } from './landing/landing.component';
 import { TeamComponent } from './team/team.component';
 import { RefsComponent } from './refs/refs.component';
+import { DeliverablesComponent } from './deliverables/deliverables.component';
+import { PresentationsComponent } from './presentations/presentations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LandingComponent,
-    TeamComponent
+    TeamComponent,
+    DeliverablesComponent,
+    PresentationsComponent
   ],
   imports: [
     BrowserModule,
