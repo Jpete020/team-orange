@@ -5,13 +5,31 @@
   <div class="spacer"></div>
 
   <div class="top-nav-button-container">
-   <button class="top-nav-buttons" routerLink="" mat-button>Home</button>
+   <button class="top-nav-buttons" routerLink="#problem" mat-button>Problem</button>
+   <button class="top-nav-buttons" routerLink="#solution" mat-button>Solution</button>
    <button class="top-nav-buttons" routerLink="team" mat-button>Team</button>
-   <button mat-button [matMenuTriggerFor]="beforeMenu" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon></button>
+   <button mat-button [matMenuTriggerFor]="beforeMenu" class="top-nav-buttons">Deliverables<mat-icon>expand_more</mat-icon>
+    <div class="dropdown-content">
+    </div>
+  </button>
    <mat-menu #beforeMenu="matMenu" xPosition="before">
-     <button mat-menu-item routerLink="">Feasibility</button>
+     <button mat-menu-item routerLink="deliverables"><a href="deliverables.html#currentpf"></a> Current Process Flow</button>
+     <button mat-menu-item routerLink="deliverables"> <a href="deliverables.html#solutionpf"></a>Solution Process Flow</button>
+     <button mat-menu-item routerLink="deliverables.html#competition">Competition Matrix</button>
+     <button mat-menu-item routerLink="deliverables.html#mfcd">Major Functional Component Diagram</button>
+
    </mat-menu>
-   <button class="top-nav-buttons" routerLink="" mat-button>User Stories</button>
+   <button mat-button [matMenuTriggerFor]="beforeMenu" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon>
+     <div class="dropdown-content"> 
+     </div>
+   </button>
+   <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="presentations.html#ideapresentation">Feasibility</button>
+      <button mat-menu-item routerLink="presentations.html#feasibility">Feasibility</button>
+      <button mat-menu-item routerLink="presentations.html#feasibility2">Feasibility 2.0</button>
+      <button mat-menu-item routerLink="presentations.html#design">Design</button>
+  </mat-menu>
+
    <button class="top-nav-buttons" routerLink="" mat-button>Prototype</button>
    <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
   </div>
