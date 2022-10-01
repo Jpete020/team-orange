@@ -13,6 +13,7 @@ import { DeliverablesComponent } from './deliverables/deliverables.component';
 import { PresentationsComponent } from './presentations/presentations.component';
 import { SolutionComponent } from './solution/solution.component';
 import { GlossaryComponent } from './glossary/glossary.component';
+import { CurrentFlowImgComponent } from './current-flow-img/current-flow-img.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GlossaryComponent } from './glossary/glossary.component';
     DeliverablesComponent,
     PresentationsComponent,
     SolutionComponent,
-    GlossaryComponent
+    GlossaryComponent,
+    CurrentFlowImgComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import {Router, ActivatedRoute, Params} from '@angular/router';
+import { CurrentFlowImgComponent } from '../current-flow-img/current-flow-img.component';
 
 @Component({
   selector: 'app-deliverables',
@@ -16,7 +18,7 @@ export class DeliverablesComponent implements OnInit {
   @ViewChild('mfcd') mfcd: ElementRef;
 
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute, public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -56,6 +58,16 @@ export class DeliverablesComponent implements OnInit {
         }
       }
 
+    });
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(CurrentFlowImgComponent,{
+      width:'70%'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
     });
   }
 

@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .header-container{
@@ -12,11 +12,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 .header-image{
   width: 350px;
-  height: auto;
+  height: fit-content;
 }
 
 .row{
@@ -40,12 +41,14 @@
 
 .problem{
   font-size: 42px;
+  line-height: 42px;
   font-weight: bold;
   color: #202020;
+  margin: 0px;
 }
 
 .statement-container{
-  margin-top: 250px;
+  margin-top: 215px;
   margin-right: 50px;
 }
 
@@ -54,4 +57,15 @@
   width: 150px;
   height: 60px;
   font-size: 18px;
+}
+
+.problem-characteristics-card{
+}
+
+.problem-characteristics{
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #202020;
+  margin: 0px 0px 10px 0px;
 }
