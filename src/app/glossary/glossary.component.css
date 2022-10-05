@@ -11,3 +11,28 @@
   font-size: 60px;
   font-weight: bold;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  float: left;
+  width: 15%;
+  font-weight: bold;
+}
+
+.definition{
+  width: 85%;
+  float: left;
+}
+
+.glossary-item{
+
+}
