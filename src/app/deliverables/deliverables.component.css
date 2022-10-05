@@ -26,9 +26,13 @@
 
 .dialog-btn{
   position: absolute;
-  top: 24%;
-  left: 47%;
-  padding: 4.5% 7%;
+  top: 47%;
+  left: 62%;
+  padding: 8.7% 6%;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.dialog-btn:hover{
+  border: 2px solid #3d3d3d;
 }
