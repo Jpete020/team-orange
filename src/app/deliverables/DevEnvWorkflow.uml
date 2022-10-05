@@ -1,0 +1,40 @@
+@startuml
+title Developer Environment Workflow Path
+hide empty description
+
+state "ROS Developer Workspace" as dw {
+ state "Interactive Display"
+}
+
+state "Local Testing Env" as lte
+
+state "Exterior Database" as exdb
+
+state "Code Merge Pipeline" as pipeline
+
+state "Test Server" as testServer
+
+state Robot {
+  Robot: Autonomous vehicle, Robotic Arm, Auto pilot, etc...
+
+  state "Onboard Database" as indb
+  state Sensors
+  state Actuators
+}
+
+
+dw --> lte : Local tests
+lte -> dw
+
+dw -> pipeline
+
+pipeline --> testServer : Tests To Run
+testServer -l-> pipeline : Test Results
+pipeline -> Robot : Live Software
+
+Robot -> exdb
+
+exdb -d-> testServer : Recorded Session Data
+
+
+@enduml
