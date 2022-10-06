@@ -11,3 +11,13 @@
   font-size: 60px;
   font-weight: bold;
 }
+
+.solution-statement{
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 10px;
+  line-height: 33px;
+  color: #202020;
+  text-align: center;
+}
