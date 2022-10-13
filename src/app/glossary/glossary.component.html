@@ -12,15 +12,15 @@
     </div>
     <div class="definition">
       <p>
-        ROS is a set of software libraries that helps to build robot applications. 
-        Ranging from drivers, to algorithms, and powerful developer tools, ROS is 
+        ROS is a set of software libraries that helps to build robot applications.
+        Ranging from drivers, to algorithms, and powerful developer tools, ROS is
         the preferred tool for robotics projects.
       </p>
    </div>
   </div>
   <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Node</p>
@@ -38,114 +38,129 @@
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Bag</p>
   </div>
   <div class="definition">
     <p>
-      A bag is a file format in ROS for storing ROS message data. These bags have an 
-      important role in ROS, and a variety of tools have been written to allow you to 
-      store, process, analyze, and visualize them. Bags are the primary mechanism in 
+      A bag is a file format in ROS for storing ROS message data. These bags have an
+      important role in ROS, and a variety of tools have been written to allow you to
+      store, process, analyze, and visualize them. Bags are the primary mechanism in
       ROS for data logging, which means that they have a variety of offline uses.
     </p>
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Master</p>
   </div>
   <div class="definition">
     <p>
-      The ROS Master provides naming and registration services to the rest of the nodes 
-      in the ROS system. It tracks publishers and subscribers to topics as well as 
-      services. The role of the Master is to enable individual ROS nodes to locate one 
-      another. Once these nodes have located each other they communicate with each other 
-      peer-to-peer. The Master also provides the Parameter Server and is most commonly 
-      run using the roscore command, which loads the ROS Master along with other 
+      The ROS Master provides naming and registration services to the rest of the nodes
+      in the ROS system. It tracks publishers and subscribers to topics as well as
+      services. The role of the Master is to enable individual ROS nodes to locate one
+      another. Once these nodes have located each other they communicate with each other
+      peer-to-peer. The Master also provides the Parameter Server and is most commonly
+      run using the roscore command, which loads the ROS Master along with other
       essential components.
     </p>
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Parameter Server</p>
   </div>
   <div class="definition">
     <p>
-      A parameter server is a shared, multi-variate dictionary that is accessible via 
-      network APIs. Nodes use this server to store and retrieve parameters at runtime. 
-      As it is not designed for high-performance, it is best used for static, 
-      non-binary data such as configuration parameters. It is meant to be globally 
-      viewable so that tools can easily inspect the configuration state of the system 
+      A parameter server is a shared, multi-variate dictionary that is accessible via
+      network APIs. Nodes use this server to store and retrieve parameters at runtime.
+      As it is not designed for high-performance, it is best used for static,
+      non-binary data such as configuration parameters. It is meant to be globally
+      viewable so that tools can easily inspect the configuration state of the system
       and modify if necessary.
     </p>
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Messages</p>
   </div>
   <div class="definition">
     <p>
-      Nodes communicate with each other by publishing messages to topics. A message is 
-      a simple data structure, comprising typed fields. Standard primitive types 
-      (integer, floating point, boolean, etc.) are supported, as are arrays of 
-      primitive types. Messages can include arbitrarily nested structures and arrays. 
+      Nodes communicate with each other by publishing messages to topics. A message is
+      a simple data structure, comprising typed fields. Standard primitive types
+      (integer, floating point, boolean, etc.) are supported, as are arrays of
+      primitive types. Messages can include arbitrarily nested structures and arrays.
       Nodes can also exchange a request and response message as part of a ROS service call.
     </p>
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Services</p>
   </div>
   <div class="definition">
     <p>
-      Request / reply is done via a Service, which is defined by a pair of messages: 
-      one for the request and one for the reply. A providing ROS node offers a service 
-      under a string name, and a client calls the service by sending the request message 
-      and awaiting the reply. Client libraries usually present this interaction to the 
-      programmer as if it were a remote procedure call.  
+      Request / reply is done via a Service, which is defined by a pair of messages:
+      one for the request and one for the reply. A providing ROS node offers a service
+      under a string name, and a client calls the service by sending the request message
+      and awaiting the reply. Client libraries usually present this interaction to the
+      programmer as if it were a remote procedure call.
     </p>
  </div>
 </div>
 <hr>
-  
-  
+
+
   <div class="glossary-item">
   <div class="name">
     <p>ROS Topics</p>
   </div>
   <div class="definition">
     <p>
-      Topics are named buses over which nodes exchange messages. Topics have anonymous 
-      publish/subscribe semantics, which decouples the production of information from 
-      its consumption. In general, nodes are not aware of who they are communicating with. 
-      Instead, nodes that are interested in data subscribe to the relevant topic; nodes 
-      that generate data publish to the relevant topic. There can be multiple publishers 
-      and subscribers to a topic. Topics are intended for unidirectional, streaming 
-      communication. Nodes that need to perform remote procedure calls, i.e. receive a 
-      response to a request, should use services instead. There is also the Parameter 
+      Topics are named buses over which nodes exchange messages. Topics have anonymous
+      publish/subscribe semantics, which decouples the production of information from
+      its consumption. In general, nodes are not aware of who they are communicating with.
+      Instead, nodes that are interested in data subscribe to the relevant topic; nodes
+      that generate data publish to the relevant topic. There can be multiple publishers
+      and subscribers to a topic. Topics are intended for unidirectional, streaming
+      communication. Nodes that need to perform remote procedure calls, i.e. receive a
+      response to a request, should use services instead. There is also the Parameter
       Server for maintaining small amounts of state.
     </p>
  </div>
 </div>
 <hr>
+
+<div class="glossary-item">
+  <div class="name">
+    <p>Autonomous Machine</p>
+  </div>
+  <div class="definition">
+    <p>
+      A machine capable of sensing its environment, carrying out computations to make decisions, and performing actions in the real world.
+    </p>
+ </div>
+</div>
+<hr>
+
+
+
 
 
 

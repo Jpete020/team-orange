@@ -7,11 +7,17 @@
           Problem Statement:
         </p>
         <p class="problem-statement">
+          ROS development contains high barriers of<br>entry for new developers and environments.
+
+
+
+          <!--
           Robot Operating System (ROS) requires an<br>
           abundance of terminal windows for building robot <br>
           applications. Developing robotics applications is <br>
           inefficient with the absence of customizable
           <br>terminal window settings.
+          -->
         </p>
         <!--<button mat-raised-button class="learn-more-btn">Learn More</button>-->
       </div>
@@ -32,13 +38,21 @@
         </p>
         <br>
           <ul class="problem-characteristics">
-            <li>Each node needs multiple terminals, sometimes leading to 30 plus windows open at once.</li>
+            <li>Each ROS node has at least one terminal window associated with it.<br>
+              Best case scenario:          n Nodes = n Terminals
+             </li>
             <br>
             <li>Terminal windows do not automatically have distinct attributes to easily identify one from another.</li>
             <br>
             <li>Navigating multiple windows can stall process flow.</li>
             <br>
-            <li>Programming on x+1 terminals, with no distinction of where an input creates an output, is time consuming.</li>
+            <li>There is no distinction when changes in one node affects a related node.</li>
+            <br>
+            <li>The ROS environment doesn't provide a GUI for folders, making it difficult to browse code.</li>
+            <br>
+            <li>Simple debugging methodologies become time consuming due to how ROS displays errors.</li>
+            <br>
+            <li>The combination these characteristics increase the already steep learning curve of ROS.</li>
           </ul>
         </div>
       </mat-card-content>
