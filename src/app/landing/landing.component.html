@@ -38,21 +38,18 @@
         </p>
         <br>
           <ul class="problem-characteristics">
-            <li>Each ROS node has at least one terminal window associated with it.<br>
-              Best case scenario:          n Nodes = n Terminals
-             </li>
+            <li>ROS workflows leverage several non-attributional windows that elevate the difficulty of debugging, monitoring & understanding
+              <ul>
+                <li style="margin-top:5px">Each ROS node has at least one terminal window associated with it</li>
+                <li style="margin-top:5px">There is no distinction when changes in one node affects a related node</li>
+                <li style="margin-top:5px">Simple debugging methodologies become time consuming due to how ROS displays errors</li>
+              </ul>
+            </li>
             <br>
-            <li>Terminal windows do not automatically have distinct attributes to easily identify one from another.</li>
+            <li>Many parts of the documentation are not up to date and require significant technical knowledge</li>
             <br>
-            <li>Navigating multiple windows can stall process flow.</li>
+            <li>Environment setup can be difficult in any project, but especially in one that can use multiple versions and distributed dependencies</li>
             <br>
-            <li>There is no distinction when changes in one node affects a related node.</li>
-            <br>
-            <li>The ROS environment doesn't provide a GUI for folders, making it difficult to browse code.</li>
-            <br>
-            <li>Simple debugging methodologies become time consuming due to how ROS displays errors.</li>
-            <br>
-            <li>The combination these characteristics increase the already steep learning curve of ROS.</li>
           </ul>
         </div>
       </mat-card-content>
