@@ -17,6 +17,7 @@
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'spf'}">Solution Process Flow</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cm'}">Competition Matrices</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'mfcd'}">Major Functional Component Diagram</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'wbs'}">Work Breakdown Structure</button>
 
    </mat-menu>
    <button mat-button [matMenuTriggerFor]="presentations" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon>
@@ -28,6 +29,7 @@
       <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}">Feasibility</button>
       <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}">Design</button>
   </mat-menu>
+  <button class="top-nav-buttons" routerLink="userstories" mat-button>User Stories</button>
 
    <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
    <button class="top-nav-buttons" routerLink="glossary" mat-button>Glossary</button>

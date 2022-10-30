@@ -16,6 +16,7 @@ export class DeliverablesComponent implements OnInit {
   @ViewChild('spf') spf: ElementRef;
   @ViewChild('cm') cm: ElementRef;
   @ViewChild('mfcd') mfcd: ElementRef;
+  @ViewChild('wbs') wbs: ElementRef;
 
 
   constructor(private activatedRoute: ActivatedRoute, public dialog: MatDialog) { }
@@ -41,6 +42,9 @@ export class DeliverablesComponent implements OnInit {
           else if(this.deliverable == "mfcd"){
             this.scrollIntoView(this.mfcd);
           }
+          else if(this.deliverable == "wbs"){
+            this.scrollIntoView(this.wbs);
+          }
           this.firstLoad = false;
         }, 100);
       else{
@@ -55,6 +59,9 @@ export class DeliverablesComponent implements OnInit {
         }
         else if(this.deliverable == "mfcd"){
           this.scrollIntoView(this.mfcd);
+        }
+        else if(this.deliverable == "wbs"){
+          this.scrollIntoView(this.wbs);
         }
       }
 
