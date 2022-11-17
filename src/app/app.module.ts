@@ -15,6 +15,7 @@ import { SolutionComponent } from './solution/solution.component';
 import { GlossaryComponent } from './glossary/glossary.component';
 import { CurrentFlowImgComponent } from './current-flow-img/current-flow-img.component';
 import { UserstoriesComponent } from './userstories/userstories.component';
+import { LabsComponent } from './labs/labs.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserstoriesComponent } from './userstories/userstories.component';
     SolutionComponent,
     GlossaryComponent,
     CurrentFlowImgComponent,
-    UserstoriesComponent
+    UserstoriesComponent,
+    LabsComponent
   ],
   imports: [
     BrowserModule,
