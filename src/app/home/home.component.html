@@ -15,10 +15,15 @@
    <mat-menu #deliverables="matMenu" xPosition="before">
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cpf'}">Current Process Flow</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'spf'}">Solution Process Flow</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ft'}">Features Table</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cm'}">Competition Matrices</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'mfcd'}">Major Functional Component Diagram</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'wbs'}">Work Breakdown Structure</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'apis'}">External Sources/Api's</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ui'}">UI Flow Diagram</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'algo'}">Algorithms</button>
      <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rd'}">Relational Diagram</button>
+     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rm'}">Risk Matrices</button>
 
    </mat-menu>
    <button mat-button [matMenuTriggerFor]="presentations" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon>

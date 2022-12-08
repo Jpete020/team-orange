@@ -19,6 +19,14 @@ export class DeliverablesComponent implements OnInit {
   @ViewChild('wbs') wbs: ElementRef;
   @ViewChild('rd') rd: ElementRef;
 
+  @ViewChild('ft') ft: ElementRef;
+  @ViewChild('apis') apis: ElementRef;
+  @ViewChild('ui') ui: ElementRef;
+  @ViewChild('algo') algo: ElementRef;
+  @ViewChild('rm') rm: ElementRef;
+
+
+
 
   constructor(private activatedRoute: ActivatedRoute, public dialog: MatDialog) { }
 
@@ -49,6 +57,21 @@ export class DeliverablesComponent implements OnInit {
           else if(this.deliverable == "rd"){
             this.scrollIntoView(this.rd);
           }
+          else if(this.deliverable == "ft"){
+            this.scrollIntoView(this.ft);
+          }
+          else if(this.deliverable == "apis"){
+            this.scrollIntoView(this.apis);
+          }
+          else if(this.deliverable == "ui"){
+            this.scrollIntoView(this.ui);
+          }
+          else if(this.deliverable == "algo"){
+            this.scrollIntoView(this.algo);
+          }
+          else if(this.deliverable == "rm"){
+            this.scrollIntoView(this.rm);
+          }
           this.firstLoad = false;
         }, 100);
       else{
@@ -69,6 +92,21 @@ export class DeliverablesComponent implements OnInit {
         }
         else if(this.deliverable == "rd"){
           this.scrollIntoView(this.rd);
+        }
+        else if(this.deliverable == "ft"){
+          this.scrollIntoView(this.ft);
+        }
+        else if(this.deliverable == "apis"){
+          this.scrollIntoView(this.apis);
+        }
+        else if(this.deliverable == "ui"){
+          this.scrollIntoView(this.ui);
+        }
+        else if(this.deliverable == "algo"){
+          this.scrollIntoView(this.algo);
+        }
+        else if(this.deliverable == "rm"){
+          this.scrollIntoView(this.rm);
         }
       }
 
