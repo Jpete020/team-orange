@@ -1,6 +1,6 @@
 .container{
   position: relative;
-  width: 90%;
+  width: 70%;
   margin: 0px auto;
   padding-bottom: 100px;
 }
@@ -14,7 +14,7 @@
 }
 
 .flow-chart-img{
-  width: 90%;
+  width: 100%;
   min-height: 750px;
 }
 

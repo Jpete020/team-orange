@@ -63,6 +63,16 @@
   margin-left: 30px;
 }
 
+.footer{
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background-color: white;
+  box-shadow: -3px -1px 1px 0px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  position: fixed;
+  bottom: 0;
+}
+
 
 
 
