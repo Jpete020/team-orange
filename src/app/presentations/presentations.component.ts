@@ -14,6 +14,7 @@ export class PresentationsComponent implements OnInit {
   @ViewChild('op') op: ElementRef;
   @ViewChild('f1') f1: ElementRef;
   @ViewChild('d') d: ElementRef;
+  @ViewChild('pt') pt: ElementRef;
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
@@ -35,8 +36,11 @@ export class PresentationsComponent implements OnInit {
           else if(this.presentation == "d"){
             this.scrollIntoView(this.d);
           }
+          else if(this.presentation == "pt"){
+            this.scrollIntoView(this.pt);
+          }
           this.firstLoad = false;
-        }, 100);
+        }, 300);
       else{
         if(this.presentation == "op"){
           this.scrollIntoView(this.op);
@@ -46,6 +50,9 @@ export class PresentationsComponent implements OnInit {
         }
         else if(this.presentation == "d"){
           this.scrollIntoView(this.d);
+        }
+        else if(this.presentation == "pt"){
+          this.scrollIntoView(this.pt);
         }
       }
 

@@ -18,5 +18,12 @@
 
 .flow-chart-img{
   width: 100%;
-  min-height: 800px;
+}
+
+.deliverable-page-header{
+  text-align: center;
+  margin: 50px 0px 20px 0px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
 }
