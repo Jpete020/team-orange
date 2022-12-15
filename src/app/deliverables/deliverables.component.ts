@@ -37,78 +37,41 @@ export class DeliverablesComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe(params => {
       this.deliverable = params['param'];
 
-      if(this.firstLoad)
-        setTimeout(() => {
-          if(this.deliverable == "cpf"){
-            this.scrollIntoView(this.cpf);
-          }
-          else if(this.deliverable == "spf"){
-            this.scrollIntoView(this.spf);
-          }
-          else if(this.deliverable == "cm"){
-            this.scrollIntoView(this.cm);
-          }
-          else if(this.deliverable == "mfcd"){
-            this.scrollIntoView(this.mfcd);
-          }
-          else if(this.deliverable == "wbs"){
-            this.scrollIntoView(this.wbs);
-          }
-          else if(this.deliverable == "rd"){
-            this.scrollIntoView(this.rd);
-          }
-          else if(this.deliverable == "ft"){
-            this.scrollIntoView(this.ft);
-          }
-          else if(this.deliverable == "apis"){
-            this.scrollIntoView(this.apis);
-          }
-          else if(this.deliverable == "ui"){
-            this.scrollIntoView(this.ui);
-          }
-          else if(this.deliverable == "algo"){
-            this.scrollIntoView(this.algo);
-          }
-          else if(this.deliverable == "rm"){
-            this.scrollIntoView(this.rm);
-          }
-          this.firstLoad = false;
-        }, 100);
-      else{
-        if(this.deliverable == "cpf"){
-          this.scrollIntoView(this.cpf);
-        }
-        else if(this.deliverable == "spf"){
-          this.scrollIntoView(this.spf);
-        }
-        else if(this.deliverable == "cm"){
-          this.scrollIntoView(this.cm);
-        }
-        else if(this.deliverable == "mfcd"){
-          this.scrollIntoView(this.mfcd);
-        }
-        else if(this.deliverable == "wbs"){
-          this.scrollIntoView(this.wbs);
-        }
-        else if(this.deliverable == "rd"){
-          this.scrollIntoView(this.rd);
-        }
-        else if(this.deliverable == "ft"){
-          this.scrollIntoView(this.ft);
-        }
-        else if(this.deliverable == "apis"){
-          this.scrollIntoView(this.apis);
-        }
-        else if(this.deliverable == "ui"){
-          this.scrollIntoView(this.ui);
-        }
-        else if(this.deliverable == "algo"){
-          this.scrollIntoView(this.algo);
-        }
-        else if(this.deliverable == "rm"){
-          this.scrollIntoView(this.rm);
-        }
+
+      if(this.deliverable == "cpf"){
+        this.scrollIntoView(this.cpf);
       }
+      else if(this.deliverable == "spf"){
+        this.scrollIntoView(this.spf);
+      }
+      else if(this.deliverable == "cm"){
+        this.scrollIntoView(this.cm);
+      }
+      else if(this.deliverable == "mfcd"){
+        this.scrollIntoView(this.mfcd);
+      }
+      else if(this.deliverable == "wbs"){
+        this.scrollIntoView(this.wbs);
+      }
+      else if(this.deliverable == "rd"){
+        this.scrollIntoView(this.rd);
+      }
+      else if(this.deliverable == "ft"){
+        this.scrollIntoView(this.ft);
+      }
+      else if(this.deliverable == "apis"){
+        this.scrollIntoView(this.apis);
+      }
+      else if(this.deliverable == "ui"){
+        this.scrollIntoView(this.ui);
+      }
+      else if(this.deliverable == "algo"){
+        this.scrollIntoView(this.algo);
+      }
+      else if(this.deliverable == "rm"){
+        this.scrollIntoView(this.rm);
+      }
+
 
     });
   }
@@ -131,6 +94,44 @@ export class DeliverablesComponent implements OnInit {
     el.nativeElement.scrollIntoView();
     el.nativeElement.style.top = top;
     el.nativeElement.style.position = pos;
+  }
+
+  onImageLoad(header){
+    if(header == this.deliverable){
+      if(this.deliverable == "cpf"){
+        this.scrollIntoView(this.cpf);
+      }
+      else if(this.deliverable == "spf"){
+        this.scrollIntoView(this.spf);
+      }
+      else if(this.deliverable == "cm"){
+        this.scrollIntoView(this.cm);
+      }
+      else if(this.deliverable == "mfcd"){
+        this.scrollIntoView(this.mfcd);
+      }
+      else if(this.deliverable == "wbs"){
+        this.scrollIntoView(this.wbs);
+      }
+      else if(this.deliverable == "rd"){
+        this.scrollIntoView(this.rd);
+      }
+      else if(this.deliverable == "ft"){
+        this.scrollIntoView(this.ft);
+      }
+      else if(this.deliverable == "apis"){
+        this.scrollIntoView(this.apis);
+      }
+      else if(this.deliverable == "ui"){
+        this.scrollIntoView(this.ui);
+      }
+      else if(this.deliverable == "algo"){
+        this.scrollIntoView(this.algo);
+      }
+      else if(this.deliverable == "rm"){
+        this.scrollIntoView(this.rm);
+      }
+    }
   }
 
 }
