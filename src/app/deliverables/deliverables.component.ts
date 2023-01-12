@@ -25,7 +25,7 @@ export class DeliverablesComponent implements OnInit {
   @ViewChild('algo') algo: ElementRef;
   @ViewChild('rm') rm: ElementRef;
 
-
+  @ViewChild('sp') sp: ElementRef;
 
 
   constructor(private activatedRoute: ActivatedRoute, public dialog: MatDialog) { }
@@ -70,6 +70,9 @@ export class DeliverablesComponent implements OnInit {
       }
       else if(this.deliverable == "rm"){
         this.scrollIntoView(this.rm);
+      }
+      else if(this.deliverable == "sp"){
+        this.scrollIntoView(this.sp);
       }
 
 
@@ -130,6 +133,9 @@ export class DeliverablesComponent implements OnInit {
       }
       else if(this.deliverable == "rm"){
         this.scrollIntoView(this.rm);
+      }
+      else if(this.deliverable == "sp"){
+        this.scrollIntoView(this.sp);
       }
     }
   }
