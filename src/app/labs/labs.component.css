@@ -18,6 +18,12 @@
   min-height: 600px;
 }
 
+.flow-chart-img-dyn{
+  width: 850px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
 .team-page-header{
   text-align: center;
   margin-top: 80px;
