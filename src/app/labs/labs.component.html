@@ -24,7 +24,7 @@
     </mat-tab>
     <mat-tab label="Lab 2 - Section 3 Outline">
       <div style="width: 99%;text-align: center;margin-top: 5px">
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSRc1qc5nEKnO2QWTpb8RibN4iEOXrUttN4mBLk-NEQ-wo5uG801NNK2zZVkjohTfwRDYMc7-ee5zxK/pub?embedded=true" class="flow-chart-img-dyn"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ10_NU-t27XwmXEINVn-pfIwYpNlFunsfukXYyfGwkDlsC2dW2ODju1dTlWEJLnLE5pJOqgcIFJioD/pub?embedded=true" class="flow-chart-img-dyn"></iframe>
       </div>
     </mat-tab>
         <mat-tab label="Lab 2 - Sections 1 & 2 Outline">
@@ -48,9 +48,19 @@
         <mat-card-content style="text-align:center">
           <h2 style="margin-bottom:0px;text-align: center;font-weight: bold;">Joshua Peterson's <br>Labs</h2>
 
-          <a href="assets/files/jpLab1Draft.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Draft</button></a>
-          <a href="assets/files/jpLab1.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Version 1</button></a>
-          <a href="assets/files/jpLab1F.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Final Version</button></a>
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="jpLab1" class="contact-button">Lab 1</button>
+          <mat-menu #jpLab1="matMenu" xPosition="before">
+
+            <a href="assets/files/jpLab1Draft.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Draft</button></a>
+            <a href="assets/files/jpLab1.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Version 1</button></a>
+            <a href="assets/files/jpLab1F.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Final Version</button></a>
+          </mat-menu>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="jpLab2" class="contact-button">Lab 2</button>
+          <mat-menu #jpLab2="matMenu" xPosition="before">
+
+            <a href="assets/files/jpLab2.pdf" target="_blank"><button mat-menu-item>View Lab 2 - Version 1</button></a>
+          </mat-menu>
 
         </mat-card-content>
       </mat-card>
@@ -60,9 +70,19 @@
         <mat-card-content style="text-align:center">
           <h2 style="margin-bottom:0px;text-align: center;font-weight: bold;">Dominik Soos's <br>Labs</h2>
 
-          <a href="assets/files/dsLab1Draft.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Draft</button></a>
-          <a href="assets/files/dsLab1.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Version 1</button></a>
-          <a href="assets/files/dsLab1F.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Final Version</button></a>
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="dsLab1" class="contact-button">Lab 1</button>
+          <mat-menu #dsLab1="matMenu" xPosition="before">
+
+            <a href="assets/files/dsLab1Draft.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Draft</button></a>
+            <a href="assets/files/dsLab1.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Version 1</button></a>
+            <a href="assets/files/dsLab1F.pdf"  target="_blank"><button mat-menu-item>View Lab 1 - Final Version</button></a>
+          </mat-menu>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="dsLab2" class="contact-button">Lab 2</button>
+          <mat-menu #dsLab2="matMenu" xPosition="before">
+
+            <a href="assets/files/dsLab2.pdf" target="_blank"><button mat-menu-item>View Lab 2 - Version 1</button></a>
+          </mat-menu>
 
         </mat-card-content>
       </mat-card>
@@ -72,9 +92,20 @@
         <mat-card-content style="text-align:center">
           <h2 style="margin-bottom:0px;text-align: center;font-weight: bold;">Dan Koontz's <br>Labs</h2>
 
-          <a href="assets/files/dkLab1Draft.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Draft</button></a>
-          <a href="assets/files/dkLab1.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Version 1</button></a>
-          <a href="assets/files/dkLab1F.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Final Version</button></a>
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="dkLab1" class="contact-button">Lab 1</button>
+          <mat-menu #dkLab1="matMenu" xPosition="before">
+
+            <a href="assets/files/dkLab1Draft.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Draft</button></a>
+            <a href="assets/files/dkLab1.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Version 1</button></a>
+            <a href="assets/files/dkLab1F.pdf"  target="_blank"><button mat-menu-item>View Lab 1 - Final Version</button></a>
+          </mat-menu>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="dkLab2" class="contact-button">Lab 2</button>
+          <mat-menu #dkLab2="matMenu" xPosition="before">
+
+            <a href="assets/files/dkLab2.pdf" target="_blank"><button mat-menu-item>View Lab 2 - Version 1</button></a>
+          </mat-menu>
+
         </mat-card-content>
       </mat-card>
     </div>
@@ -86,9 +117,20 @@
         <mat-card-content style="text-align:center">
           <h2 style="margin-bottom:0px;text-align: center;font-weight: bold;">Gavin St. Clair's <br>Labs</h2>
 
-          <a href="assets/files/gscLab1Draft.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Draft</button></a>
-          <a href="assets/files/gscLab1.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Version 1</button></a>
-          <a href="assets/files/gscLab1F.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Final Version</button></a>
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="gscLab1" class="contact-button">Lab 1</button>
+          <mat-menu #gscLab1="matMenu" xPosition="before">
+
+            <a href="assets/files/gscLab1Draft.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Draft</button></a>
+            <a href="assets/files/gscLab1.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Version 1</button></a>
+            <a href="assets/files/gscLab1F.pdf"  target="_blank"><button mat-menu-item>View Lab 1 - Final Version</button></a>
+          </mat-menu>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="gscLab2" class="contact-button">Lab 2</button>
+          <mat-menu #gscLab2="matMenu" xPosition="before">
+
+            <a href="assets/files/gscLab2.pdf" target="_blank"><button mat-menu-item>View Lab 2 - Version 1</button></a>
+          </mat-menu>
+
         </mat-card-content>
       </mat-card>
 
@@ -96,9 +138,22 @@
         <img class="team-img" mat-card-image src="assets/images/justin.jpg">
         <mat-card-content style="text-align:center">
           <h2 style="margin-bottom:0px;text-align: center;font-weight: bold;">Justin Tymkin's <br>Labs</h2>
-          <a href="assets/files/jtLab1Draft.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Draft</button></a>
-          <a href="assets/files/jtLab1.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Version 1</button></a>
-          <a href="assets/files/jtLab1F.pdf" target="_blank"><button class="contact-button" mat-raised-button color="primary">View Lab 1 - Final Version</button></a>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="jtLab1" class="contact-button">Lab 1</button>
+          <mat-menu #jtLab1="matMenu" xPosition="before">
+
+            <a href="assets/files/jtLab1Draft.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Draft</button></a>
+            <a href="assets/files/jtLab1.pdf" target="_blank"><button mat-menu-item>View Lab 1 - Version 1</button></a>
+            <a href="assets/files/jtLab1F.pdf"  target="_blank"><button mat-menu-item>View Lab 1 - Final Version</button></a>
+          </mat-menu>
+
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="jtLab2" class="contact-button">Lab 2</button>
+          <mat-menu #jtLab2="matMenu" xPosition="before">
+
+            <a href="assets/files/jtLab2.pdf" target="_blank"><button mat-menu-item>View Lab 2 - Version 1</button></a>
+          </mat-menu>
+
+
         </mat-card-content>
       </mat-card>
 
