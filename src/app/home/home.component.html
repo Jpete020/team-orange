@@ -1,57 +1,126 @@
-<div class="toolbar" role="banner">
+<div *ngIf="scrWidth >= 800; else mobileVersion">
+  <div class="toolbar" role="banner">
 
-  <div class="home-logo">Team Orange</div>
+    <div class="home-logo">Team Orange</div>
 
-  <div class="spacer"></div>
+    <div class="spacer"></div>
 
-  <div class="top-nav-button-container">
-   <button class="top-nav-buttons" routerLink="" mat-button>Problem</button>
-   <button class="top-nav-buttons" routerLink="solution" mat-button>Solution</button>
-   <button class="top-nav-buttons" routerLink="team" mat-button>Team</button>
-   <button mat-button [matMenuTriggerFor]="deliverables" class="top-nav-buttons">Deliverables<mat-icon>expand_more</mat-icon>
-    <div class="dropdown-content">
+    <div class="top-nav-button-container">
+      <button class="top-nav-buttons" routerLink="" mat-button>Problem</button>
+      <button class="top-nav-buttons" routerLink="solution" mat-button>Solution</button>
+      <button class="top-nav-buttons" routerLink="team" mat-button>Team</button>
+      <button mat-button [matMenuTriggerFor]="deliverables" class="top-nav-buttons">Deliverables<mat-icon>expand_more</mat-icon>
+        <div class="dropdown-content">
+        </div>
+      </button>
+      <mat-menu #deliverables="matMenu" xPosition="before">
+        <a href="assets/files/posterV1.pdf" style="text-decoration:none;" target="_blank"><button mat-menu-item>Poster</button></a>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cpf'}">Current Process Flow</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'spf'}">Solution Process Flow</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ft'}">Features Table (RWP vs. Prototype)</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cm'}">Competition Matrices</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'mfcd'}">Major Functional Component Diagram</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'wbs'}">Work Breakdown Structure</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'apis'}">External Sources/Api's</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ui'}">UI Flow Diagram</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'algo'}">Algorithms</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rd'}">Relational Diagram</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rm'}">Risk Matrices</button>
+        <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'sp'}">Prototype Sprint Plan</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="presentations" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon>
+        <div class="dropdown-content">
+        </div>
+      </button>
+      <mat-menu #presentations="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'op'}">Original Presentation</button>
+          <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}">Feasibility</button>
+          <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}">Design</button>
+          <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'pt'}">Prototype</button>
+      </mat-menu>
+      <button class="top-nav-buttons" routerLink="userstories" mat-button>User Stories</button>
+      <button class="top-nav-buttons" routerLink="labs" mat-button>Labs</button>
+
+      <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
+      <button class="top-nav-buttons" routerLink="glossary" mat-button>Glossary</button>
     </div>
-  </button>
-   <mat-menu #deliverables="matMenu" xPosition="before">
-    <a href="assets/files/posterV1.pdf" style="text-decoration:none;" target="_blank"><button mat-menu-item>Poster</button></a>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cpf'}">Current Process Flow</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'spf'}">Solution Process Flow</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ft'}">Features Table (RWP vs. Prototype)</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cm'}">Competition Matrices</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'mfcd'}">Major Functional Component Diagram</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'wbs'}">Work Breakdown Structure</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'apis'}">External Sources/Api's</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ui'}">UI Flow Diagram</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'algo'}">Algorithms</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rd'}">Relational Diagram</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rm'}">Risk Matrices</button>
-     <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'sp'}">Prototype Sprint Plan</button>
-   </mat-menu>
-   <button mat-button [matMenuTriggerFor]="presentations" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon>
-     <div class="dropdown-content">
-     </div>
-   </button>
-   <mat-menu #presentations="matMenu" xPosition="before">
-      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'op'}">Original Presentation</button>
-      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}">Feasibility</button>
-      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}">Design</button>
-      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'pt'}">Prototype</button>
-  </mat-menu>
-  <button class="top-nav-buttons" routerLink="userstories" mat-button>User Stories</button>
-  <button class="top-nav-buttons" routerLink="labs" mat-button>Labs</button>
 
-   <button class="top-nav-buttons" routerLink="refs" mat-button>References</button>
-   <button class="top-nav-buttons" routerLink="glossary" mat-button>Glossary</button>
   </div>
 
+  <div style="width:100%;height:100px"></div>
+
+  <router-outlet></router-outlet>
+
+  <div class="footer">
+    <p style="line-height: 50px;">
+      This website contains coursework related to CS411W at <a href="https://www.odu.edu/">Old Dominion University</a> as part of the <a href="https://www.odu.edu/compsci">Computer Science Department</a>.
+    </p>
+  </div>
 </div>
 
-<div style="width:100%;height:100px"></div>
+<ng-template #mobileVersion>
+  <div class="toolbar" role="banner">
 
-<router-outlet></router-outlet>
+    <button mat-icon-button (click)="sidenav.toggle()" style="margin-left: 20px;">
+      <mat-icon>menu</mat-icon>
+    </button>
 
-<div class="footer">
-  <p style="line-height: 50px;">
-    This website contains coursework related to CS410 at <a href="https://www.odu.edu/">Old Dominion University</a> as part of the <a href="https://www.odu.edu/compsci">Computer Science Department</a>.
-  </p>
-</div>
+    <div class="spacer"></div>
+
+    <div class="home-logo" style="margin-right: 30px;">Team Orange</div>
+
+  </div>
+
+  <div style="width:100%;height:100px"></div>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" class="sidenav"
+                 [fixedInViewport]="true" [fixedTopGap]="75"
+                 >
+                 <div class="sidenav-btns">
+                  <button class="top-nav-buttons" routerLink="" mat-button (click)="sidenav.toggle()">Problem</button>
+                  <button class="top-nav-buttons" routerLink="solution" mat-button (click)="sidenav.toggle()">Solution</button>
+                  <button class="top-nav-buttons" routerLink="team" mat-button (click)="sidenav.toggle()">Team</button>
+                  <button mat-button [matMenuTriggerFor]="deliverables" class="top-nav-buttons">Deliverables<mat-icon>expand_more</mat-icon></button>
+                  <mat-menu #deliverables="matMenu" xPosition="before">
+                    <a href="assets/files/posterV1.pdf" style="text-decoration:none;" target="_blank"><button mat-menu-item (click)="sidenav.toggle()">Poster</button></a>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cpf'}" (click)="sidenav.toggle()">Current Process Flow</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'spf'}" (click)="sidenav.toggle()">Solution Process Flow</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ft'}" (click)="sidenav.toggle()">Features Table (RWP vs. Prototype)</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'cm'}" (click)="sidenav.toggle()">Competition Matrices</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'mfcd'}" (click)="sidenav.toggle()">Major Functional Component Diagram</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'wbs'}" (click)="sidenav.toggle()">Work Breakdown Structure</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'apis'}" (click)="sidenav.toggle()">External Sources/Api's</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'ui'}" (click)="sidenav.toggle()">UI Flow Diagram</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'algo'}" (click)="sidenav.toggle()">Algorithms</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rd'}" (click)="sidenav.toggle()">Relational Diagram</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'rm'}" (click)="sidenav.toggle()">Risk Matrices</button>
+                    <button mat-menu-item routerLink="deliverables" [queryParams]="{param: 'sp'}" (click)="sidenav.toggle()">Prototype Sprint Plan</button>
+                  </mat-menu>
+                  <button mat-button [matMenuTriggerFor]="presentations" class="top-nav-buttons">Presentations<mat-icon>expand_more</mat-icon></button>
+                  <mat-menu #presentations="matMenu" xPosition="before">
+                      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'op'}" (click)="sidenav.toggle()">Original Presentation</button>
+                      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}" (click)="sidenav.toggle()">Feasibility</button>
+                      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}" (click)="sidenav.toggle()">Design</button>
+                      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'pt'}" (click)="sidenav.toggle()">Prototype</button>
+                  </mat-menu>
+                  <button class="top-nav-buttons" routerLink="userstories" mat-button (click)="sidenav.toggle()">User Stories</button>
+                  <button class="top-nav-buttons" routerLink="labs" mat-button (click)="sidenav.toggle()">Labs</button>
+
+                  <button class="top-nav-buttons" routerLink="refs" mat-button (click)="sidenav.toggle()">References</button>
+                  <button class="top-nav-buttons" routerLink="glossary" mat-button (click)="sidenav.toggle()">Glossary</button>
+                </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <div class="footer">
+    <p>
+      This website contains coursework related to CS411W at <a href="https://www.odu.edu/">Old Dominion University</a> as part of the <a href="https://www.odu.edu/compsci">Computer Science Department</a>.
+    </p>
+  </div>
+</ng-template>
+

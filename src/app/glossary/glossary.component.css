@@ -41,3 +41,34 @@
   width: 850px;
   min-height: 700px;
 }
+
+.hr_margin{
+  margin-top: 80px;
+}
+
+.collab-links{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .glossary-page-header{
+    font-size: 30px;
+  }
+
+  .hr_margin{
+    margin-top: 20px;
+  }
+
+  .container{
+    width: 95%;
+  }
+
+  .glossary-iframe{
+    display: none;
+  }
+
+  .collab-links{
+    display: block;
+  }
+}
+

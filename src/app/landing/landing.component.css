@@ -70,3 +70,46 @@
   color: #202020;
   margin: 0px 0px 10px 0px;
 }
+
+.bottom-container{
+  margin: 50px auto;
+  width: 70%
+}
+
+@media only screen and (max-width: 800px) {
+  .header-image{
+    width: 150px;
+    height: auto;
+  }
+
+  .statement-container{
+    margin-top: unset;
+    margin-right:unset;
+  }
+
+  .problem{
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  .problem-statement{
+    font-size: 18px;
+  }
+
+  .header-container{
+    height: 350px;
+  }
+
+  .terminals{
+    display: none;
+  }
+
+  .bottom-container{
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .problem-characteristics{
+    font-size: 16px;
+  }
+}

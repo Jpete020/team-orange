@@ -47,3 +47,33 @@
   left: 100px;
   width: 140px;
 }
+
+.hr_margin{
+  margin-top:80px
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    width: 95%;
+  }
+
+  .team-page-header{
+    font-size: 30px;
+  }
+
+  .hr_margin{
+    margin-top: 20px;
+  }
+
+  .bio-card-row{
+    margin: unset;
+  }
+
+  .row{
+    display: unset;
+  }
+
+  .bio-card{
+    margin-bottom: 20px;
+  }
+}

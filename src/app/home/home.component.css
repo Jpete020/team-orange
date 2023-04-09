@@ -76,4 +76,27 @@
 
 
 
+@media only screen and (max-width: 800px) {
+  .home-logo{
+    font-size: 24px;
+  }
 
+  .toolbar {
+    height: 75px;
+  }
+
+  .sidenav{
+    padding: 10px;
+  }
+
+  .top-nav-buttons{
+    height: unset;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .sidenav-btns{
+    display: flex;
+    flex-direction: column;
+  }
+}
