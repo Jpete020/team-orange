@@ -37,6 +37,7 @@
           <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}">Feasibility</button>
           <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}">Design</button>
           <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'pt'}">Prototype</button>
+          <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'fpt'}">Prototype Final Demo</button>
       </mat-menu>
       <button class="top-nav-buttons" routerLink="userstories" mat-button>User Stories</button>
       <button class="top-nav-buttons" routerLink="labs" mat-button>Labs</button>
@@ -103,6 +104,7 @@
                       <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'f1'}" (click)="sidenav.toggle()">Feasibility</button>
                       <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'd'}" (click)="sidenav.toggle()">Design</button>
                       <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'pt'}" (click)="sidenav.toggle()">Prototype</button>
+                      <button mat-menu-item routerLink="presentations" [queryParams]="{param: 'fpt'}" (click)="sidenav.toggle()">Prototype Final Demo</button>
                   </mat-menu>
                   <button class="top-nav-buttons" routerLink="userstories" mat-button (click)="sidenav.toggle()">User Stories</button>
                   <button class="top-nav-buttons" routerLink="labs" mat-button (click)="sidenav.toggle()">Labs</button>
